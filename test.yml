@@ -1,0 +1,8 @@
+---
+- hosts: all
+
+  tasks:
+
+    - shell: "rpm -qa"
+      register: rpm_result
+    - debug: msg="{{ rpm_result.stdout_lines[1] }}"

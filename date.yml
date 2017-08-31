@@ -1,0 +1,16 @@
+---
+- hosts: test
+  become: false
+
+  tasks:
+
+   - name: Register teh output of the uptime command
+     command: df
+     register: system_uptime
+
+   - name: Print the outpuot of the uptime command
+     debug: var=system_uptime.stdout
+
+   - name: Print a simple message if command resulted in a change
+     debug: msg="Command resulted in a change!"
+     when: system_uptime.changed
