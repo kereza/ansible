@@ -4,33 +4,33 @@
 users:
  ivanov:
   comment: Stefan Ivanov
-  groups: wheel
+  groups: wheel, sadmins
   state: present
   force: no
  dimitrov:
   comment: Evelin Dimitrov
-  groups: wheel
+  groups: sadmins
   state: present
   force: no
  gurov:
   comment: Evelin Gurvo
-  groups: wheel
+  groups: devs
   state: present
   force: no
  shterev:
   comment: Evelin Shterev
-  groups: wheel
+  groups: jadmins, devs
   state: present
   force: no
  pilov:
   comment: Evelin PIlov
-  groups: wheel
+  groups: devs
   state: present
-  force: yes
+  force: no
  kirov:
   comment: Evelin Kirov
-  groups: wheel
-  state: absent
-  force: yes
+  groups: devs
+  state: present
+  force: no
 
 

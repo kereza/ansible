@@ -9,6 +9,7 @@
      force: "{{ item.value.force }}"
      groups: "{{ item.value.groups }}"
     with_dict: "{{ users }}"
+    ignore_errors: yes
 
   - name: Remove user directories if the user is absent
     shell: rm -rf /home/{{ item.key }}
