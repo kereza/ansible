@@ -2,6 +2,11 @@
 # vars file for users
 
 users:
+ kerezov:
+  comment: Ivan Kerezov
+  groups: wheel, sadmins
+  state: present
+  force: no
  ivanov:
   comment: Stefan Ivanov
   groups: wheel, sadmins
