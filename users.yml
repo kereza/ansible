@@ -1,8 +1,9 @@
 ---
-- hosts: all
+- hosts: web
   become: true
  
   roles:
-   - sudoers 
+   - hosts
    - groups
    - users
+   - sudoers 

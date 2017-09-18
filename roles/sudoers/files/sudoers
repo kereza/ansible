@@ -13,6 +13,7 @@ Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
 
 root    ALL=(ALL)       ALL
 kerezov ALL=(ALL) NOPASSWD:ALL
+vagrant ALL=(ALL) NOPASSWD:ALL
 #Defaults:kerezov        !requiretty
 
 %wheel        ALL=(ALL)       ALL
