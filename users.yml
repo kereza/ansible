@@ -3,7 +3,8 @@
   become: true
  
   roles:
-   - hosts
-   - groups
-   - users
-   - sudoers 
+#   - hosts
+#   - groups
+#   - users
+#   - sudoers 
+   - nginx
